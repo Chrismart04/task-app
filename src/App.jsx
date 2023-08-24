@@ -8,8 +8,14 @@ function App() {
   useEffect(() => {
     setTasks(data);
   }, []);
-  function createTask (task){
-    setTasks([...tasks, task])
+
+
+  function createTask(taskTitle) {
+    setTasks([...tasks, {
+      title: taskTitle,
+      id: tasks.length,
+      description: "Nueva tarea",
+    }]);
   }
 
   return (
