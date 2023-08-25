@@ -3,10 +3,10 @@ import TaskForm from "./components/TaskForm";
 
 function App() {
   return (
-    <>
+    <main className="bg-zinc-900 ">
       <TaskForm />
       <TaskList />
-    </>
+    </main>
   );
 }
 
