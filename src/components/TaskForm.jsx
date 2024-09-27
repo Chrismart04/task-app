@@ -20,15 +20,15 @@ function TaskForm() {
     setDescription("");
   };
   return (
-    <div className="max-w-md mx-auto">
-      <form onSubmit={handleSubmit} className="bg-slate-800 p-10 mb-4">
-        <h1 className="text-2xl text-white font-bold mb-4 ">Crea tu tarea</h1>
+    <div className="max-w-md mx-auto p-4 sm:p-10">
+      <form onSubmit={handleSubmit} className="bg-slate-800 p-6 sm:p-10 mb-4 rounded-lg">
+        <h1 className="text-xl sm:text-2xl text-white font-bold mb-4 ">Crea tu tarea</h1>
 
         <input
           placeholder="escribe tu tarea"
           onChange={(e) => setTitle(e.target.value)}
           value={title}
-          className="bg-slate-300 p-3 w-full mb-2 rounded-lg"
+          className="bg-slate-300 p-2 sm:p-3 w-full mb-2 rounded-lg"
           autoFocus
         />
 
@@ -36,9 +36,9 @@ function TaskForm() {
           placeholder="Escribe la descripcion de la tarea"
           onChange={(e) => setDescription(e.target.value)}
           value={description}
-          className="bg-slate-300 p-3 w-full mb-2 rounded-lg"
+          className="bg-slate-300 p-2 sm:p-3 w-full mb-2 rounded-lg"
         ></textarea>
-        <button className="bg-indigo-400 px-3 py-2 rounded-lg  text-white">
+        <button className="bg-indigo-400 px-3 py-2 rounded-lg text-white hover:bg-indigo-500 w-full sm:w-auto">
           Guardar
         </button>
       </form>
